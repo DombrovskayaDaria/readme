@@ -1,28 +1,3 @@
 # readme
 this repository contains a program that counts summ of elements between first and last zero element
 
-using System;
-namespace Pr1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Enter n: ");
-            string b = Console.ReadLine();
-            int n = Convert.ToInt32(b);
-            int[] a = new int[n];
-            Console.WriteLine("Enter numbers using enter: ");
-            for (int i = 0; i < n; i++)
-            {
-                int x = int.Parse(Console.ReadLine());
-                a [i] = x;
-            }
-            int s = 0;
-            for (int i = Array.IndexOf(a, 0); i < Array.LastIndexOf(a, 0); i++)
-                s += a[i];
-            Console.WriteLine(s);
-            Console.ReadLine();
-        }
-    }
-}
